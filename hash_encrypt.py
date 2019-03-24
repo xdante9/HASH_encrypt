@@ -1,7 +1,11 @@
 import hashlib #import lib
+import copy
+import clipboard
+
 
 while True:
-        hash = (raw_input("select your hash :"))
+        hash = (raw_input('''<<<<<[]>>>>>
+select hash: '''))
         if hash == 'sha1':
                 sha1_encrypt = (raw_input("sha1 encrypt = ")) #input string
                 print "[",hashlib.sha1(sha1_encrypt).hexdigest(),"]"#output md5 encrypt
@@ -21,8 +25,11 @@ while True:
                 md5_encrypt = (raw_input("md5 encrypt = "))
                 print "[",hashlib.md5(md5_encrypt).hexdigest(),"]"
                 
-
-
-        exit = raw_input("1.continue,2.exit = ")
+        exit = raw_input('''<<<<<[]>>>>>
+[ 1.restart ]
+[ 2.exit ]
+>\> ''')
         if exit == '2':
                 break
+
+        
