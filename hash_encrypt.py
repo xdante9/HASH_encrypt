@@ -4,7 +4,11 @@ import clipboard
 
 
 while True:
-        hash = (raw_input('''<<<<<[]>>>>>
+        hash = (raw_input('''|--------<<<<<[]>>>>>--------|
+|  [  sha1  ]    [ sha224 ]  |
+|  [ sha384 ]    [ sha256 ]  |
+|  [ sha512 ]    [   md5  ]  |
+|--------<<<<<[]>>>>>--------|
 select hash: '''))
         if hash == 'sha1':
                 sha1_encrypt = (raw_input("sha1 encrypt = ")) #input string
