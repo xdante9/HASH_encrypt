@@ -8,4 +8,5 @@ encrypt :
          sha256 
          sha512 
          md5
+
 python3 hash3.py
