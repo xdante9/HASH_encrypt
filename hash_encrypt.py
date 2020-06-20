@@ -1,6 +1,5 @@
 import hashlib #import lib
 import copy
-import clipboard
 
 while True:
         hash = (raw_input('''|--------<<<<<[]>>>>>--------|
