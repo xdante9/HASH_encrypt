@@ -58,7 +58,7 @@ select hash: '''))
                 elif hash == 'sha3_512':
                         sha3_512_encrypt = (input("sha3_512 encrypt = "))
                         sha3_512result = hashlib.sha3_512(sha3_512_encrypt.encode('utf-8')).hexdigest()
-                        print ("[", sha3_512, "]")
+                        print ("[", sha3_512result, "]")
                 else:
                         print("Nggak Ada Sayanggg")
 
