@@ -1,10 +1,10 @@
 #YAHIKO-SIX-PATHS
-import hashlib ,os, datetime, time,random #import lib
+import hashlib, os, datetime, time #import lib
 from datetime import date
 
 try:
         while True:
-                #encryptresult = open('encrypt-hash.txt', 'r+') -- can also write and put code here
+                #encryptresult = open('encrypt-hash.txt', 'a+') -- can also write and put code here
                 hash = (input('''|-------------<<<<<[]>>>>>-------------|
 |    [   sha1    ]       [  blake2s  ] |
 |    [   sha224  ]       [ shake_128 ] |
@@ -14,7 +14,7 @@ try:
 |    [    md5    ]       [ sha3_512  ] |
 |    [  blake2b  ]                     |
 |-------------<<<<<[]>>>>>-------------|
-select hash: '''))
+>\> select hash: '''))
                 if hash == 'sha1':
                         sha1_encrypt = (input("sha1 encrypt = ")) #input string
                         sha1result = hashlib.sha1(sha1_encrypt.encode('utf-8')).hexdigest()
@@ -60,7 +60,7 @@ select hash: '''))
                         sha3_512result = hashlib.sha3_512(sha3_512_encrypt.encode('utf-8')).hexdigest()
                         print ("[", sha3_512result, "]")
                 else:
-                        print("Nggak Ada Sayanggg")
+                        print("nggak ada sayanggg")
 
 
                 exit = input('''<<<<<<<<[]>>>>>>>>
@@ -68,6 +68,7 @@ select hash: '''))
 [ 2.save         ]
 [ 3.exit         ]
 [ 4.save & exit  ]
+[ 0.read encrypt ]
 >\> ''')
                 if exit == '1':
                         clear = lambda: os.system('clear')
@@ -261,8 +262,15 @@ select hash: '''))
                                 clear = lambda: os.system('clear')
                                 clear()
                                 break
-                
+                if exit == '0':
+                        encryptresult = open('encrypt-hash.txt', 'r+')
+                        encryptread = encrypt.read()
+                        print(encryptread)
+
+#except (object >\> expression) digunakan untuk memberi command, perintah, ataupun pesan ketika error              
 except KeyboardInterrupt: #Keyboard Interrupt
-                print("Makan ya Sayanggku")
+        print("makan ya sayanggku")
+except FileNotFoundError:
+        print("filenya nggak ada sayanggku")
 finally:
-        print("Sayangku Maniss")
+        print("sayangku maniss")
