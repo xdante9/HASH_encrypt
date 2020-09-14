@@ -264,8 +264,8 @@ try:
                                 break
                 if exit == '0':
                         encryptresult = open('encrypt-hash.txt', 'r+')
-                        encryptread = encrypt.read()
-                        print(encryptread)
+                        encryptresultread = encryptresult.read()
+                        print(encryptresultread)
 
 #except (object >\> expression) digunakan untuk memberi command, perintah, ataupun pesan ketika error              
 except KeyboardInterrupt: #Keyboard Interrupt
