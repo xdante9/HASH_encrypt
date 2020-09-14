@@ -72,6 +72,7 @@ select hash: '''))
                 if exit == '1':
                         clear = lambda: os.system('clear')
                         clear()
+                        continue #continue boleh dicode, boleh juga tidak dicode
                 if exit == '2':
                         if hash == 'sha1':
                                 encryptresult = open('encrypt-hash.txt', 'a+')
@@ -79,78 +80,91 @@ select hash: '''))
                                 encryptresult.close()
                                 clear = lambda: os.system('clear')
                                 clear()
+                                continue
                         if hash == 'sha224':
                                 encryptresult = open('encrypt-hash.txt', 'a+')
                                 encryptresult.write("[   sha224  ]" + " >\> " + "[ " + str(sha224result) + " ]" + '\n')
                                 encryptresult.close()
                                 clear = lambda: os.system('clear')
                                 clear()
+                                continue
                         if hash == 'sha256':
                                 encryptresult = open('encrypt-hash.txt', 'a+')
                                 encryptresult.write("[  sha256   ]" + " >\> " + "[ " + str(sha256result) + " ]" + '\n')
                                 encryptresult.close()
                                 clear = lambda: os.system('clear')
                                 clear()
+                                continue
                         if hash == 'sha384':
                                 encryptresult = open('encrypt-hash.txt', 'a+')
                                 encryptresult.write("[   sha384  ]" + " >\> " + "[ " + str(sha384result) + " ]" + '\n')
                                 encryptresult.close()
                                 clear = lambda: os.system('clear')
                                 clear()
+                                continue
                         if hash == 'sha512':
                                 encryptresult = open('encrypt-hash.txt', 'a+')
                                 encryptresult.write("[  sha512   ]" + " >\> " + "[ " + str(sha512result) + " ]" + '\n')
                                 encryptresult.close()
                                 clear = lambda: os.system('clear')
                                 clear()
+                                continue
                         if hash == 'md5':
                                 encryptresult = open('encrypt-hash.txt', 'a+')
                                 encryptresult.write("[    md5    ]" + " >\> " + "[ " + str(md5result) + " ]" + '\n')
                                 encryptresult.close()
                                 clear = lambda: os.system('clear')
                                 clear()
+                                continue
                         if hash == 'blake2b':
                                 encryptresult = open('encrypt-hash.txt', 'a+')
                                 encryptresult.write("[  blake2b  ]" + " >\> " + "[ " + str(blake2bresult) + " ]" + '\n')
                                 encryptresult.close()
                                 clear = lambda: os.system('clear')
                                 clear()
+                                continue
                         if hash == 'blake2s':
                                 encryptresult = open('encrypt-hash.txt', 'a+')
                                 encryptresult.write("[  blake2s  ]" + " >\> " + "[ " + str(blake2sresult) + " ]" + '\n')
                                 encryptresult.close()
                                 clear = lambda: os.system('clear')
                                 clear()
+                                continue
                         if hash == 'shake_128':
                                 encryptresult = open('encrypt-hash.txt', 'a+')
                                 encryptresult.write("[ shake_128 ]" + " >\> " + "[ " + str(shake_128result) + " ]" + '\n')
                                 encryptresult.close()
                                 clear = lambda: os.system('clear')
                                 clear()
+                                continue
                         if hash == 'shake_256':
                                 encryptresult = open('encrypt-hash.txt', 'a+')
                                 encryptresult.write("[ shake_256 ]" + " >\> " + "[ " + str(shake_256result) + " ]" + '\n')
                                 encryptresult.close()
                                 clear = lambda: os.system('clear')
                                 clear()
+                                continue
                         if hash == 'sha3_224':
                                 encryptresult = open('encrypt-hash.txt', 'a+')
                                 encryptresult.write("[ sha3_224  ]" + " >\> " + "[ " + str(sha3_224result) + " ]" + '\n')
                                 encryptresult.close()
                                 clear = lambda: os.system('clear')
                                 clear()
+                                continue
                         if hash == 'sha3_256':
                                 encryptresult = open('encrypt-hash.txt', 'a+')
                                 encryptresult.write("[ sha3_256  ]" + " >\> " + "[ " + str(sha3_256result) + " ]" + '\n')
                                 encryptresult.close()
                                 clear = lambda: os.system('clear')
                                 clear()
+                                continue
                         if hash == 'sha3_512':
                                 encryptresult = open('encrypt-hash.txt', 'a+')
                                 encryptresult.write("[ sha3_512  ]" + " >\> " + "[ " + str(sha3_512result) + " ]" + '\n')
                                 encryptresult.close()
                                 clear = lambda: os.system('clear')
                                 clear()
+                                continue
                 if exit == '3':
                         clear = lambda: os.system('clear')
                         clear()
