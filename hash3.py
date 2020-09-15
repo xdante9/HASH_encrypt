@@ -1,5 +1,5 @@
 #YAHIKO-SIX-PATHS
-import hashlib, os, datetime, time #import lib
+import hashlib, os, datetime, time #import module
 from datetime import date
 
 try:
