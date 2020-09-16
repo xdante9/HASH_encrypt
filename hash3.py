@@ -10,8 +10,8 @@ try:
 |    [  sha224   ]       [ sha3_256  ] |
 |    [  sha256   ]       [ sha3_384  ] |
 |    [  sha384   ]       [ sha3_512  ] |
-|    [  sha512   ]       [  blake2b  ] |
-|    [  md5      ]       [  blake2s  ] |
+|    [  sha512   ]       [ blake2b   ] |
+|    [  md5      ]       [ blake2s   ] |
 |-------------<<<<<[]>>>>>-------------|
 >\> select hash: '''))
                 if hash == 'sha1':
@@ -150,14 +150,14 @@ try:
                                 continue
                         if hash == 'blake2b':
                                 encryptresult = open('encrypt-hash.txt', 'a+')
-                                encryptresult.write("[  blake2b  ]" + " >\> " + "[ " + str(blake2bresult) + " ]" + '\n')
+                                encryptresult.write("[ blake2b   ]" + " >\> " + "[ " + str(blake2bresult) + " ]" + '\n')
                                 encryptresult.close()
                                 clear = lambda: os.system('clear')
                                 clear()
                                 continue
                         if hash == 'blake2s':
                                 encryptresult = open('encrypt-hash.txt', 'a+')
-                                encryptresult.write("[  blake2s  ]" + " >\> " + "[ " + str(blake2sresult) + " ]" + '\n')
+                                encryptresult.write("[ blake2s   ]" + " >\> " + "[ " + str(blake2sresult) + " ]" + '\n')
                                 encryptresult.close()
                                 clear = lambda: os.system('clear')
                                 clear()
@@ -239,14 +239,14 @@ try:
                                 break
                         if hash == 'blake2b':
                                 encryptresult = open('encrypt-hash.txt', 'a+')
-                                encryptresult.write("[  blake2b  ]" + " >\> " + "[ " + str(blake2bresult) + " ]" + '\n')
+                                encryptresult.write("[ blake2b   ]" + " >\> " + "[ " + str(blake2bresult) + " ]" + '\n')
                                 encryptresult.close()
                                 clear = lambda: os.system('clear')
                                 clear()
                                 break
                         if hash == 'blake2s':
                                 encryptresult = open('encrypt-hash.txt', 'a+')
-                                encryptresult.write("[  blake2s  ]" + " >\> " + "[ " + str(blake2sresult) + " ]" + '\n')
+                                encryptresult.write("[ blake2s   ]" + " >\> " + "[ " + str(blake2sresult) + " ]" + '\n')
                                 encryptresult.close()
                                 clear = lambda: os.system('clear')
                                 clear()
